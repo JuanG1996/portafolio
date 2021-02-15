@@ -1,0 +1,80 @@
+.contenedor{
+    width: 90%;
+    min-height: 50rem;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    @include tablet{
+        height: 56rem;
+        margin: 10 auto;
+    }
+
+    @include desktop{
+        height: 70rem;
+    }
+}
+
+.avatar{
+    min-width: 20rem;
+    min-height: 20rem;
+    border: 8px solid darken($color: $colorPrincipal-1, $amount: 10);
+    border-radius: 50%;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+
+    @include tablet{
+        width: 40rem;
+        height: 40rem;
+    }
+
+    &:hover .avatar__imagen:nth-child(2){
+            opacity: 0;
+            transition: 300ms;
+    }
+
+    &:active .avatar__imagen:nth-child(2){
+        opacity: 0;
+        transition: 300ms;
+}
+
+    .avatar__imagen{
+        position: absolute;
+        width: 100%;
+        // left: -2rem;
+        // top: -2rem;
+    }
+}
+
+.misDatos{
+
+
+    .nombre{
+        font-size: 3rem;
+        font-weight: 700;
+        color: $colorSecundario-1;
+    }
+
+    .carrera{
+        font-size: 5rem;
+        color: $colorSecundario-1;
+        font-weight: bolder;
+    }
+    
+   
+}
+
+.btn{
+    width: 23rem;
+    height: 6rem;
+    font-size: 3rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.btn-principal{
+    color: $colorSecundario-1;
+    background-color: $colorPrincipal-2;
+}

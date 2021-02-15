@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%; //1rem = 10px
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: $fuentePrincipal;
+    background-color: $colorPrincipal-1;
+}
