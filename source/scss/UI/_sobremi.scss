@@ -1,0 +1,53 @@
+.sobre-mi{
+    width: 90%;
+    min-height: 30rem;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    // background-color: red;
+    @include tablet{
+        height: 40rem;
+        margin: 5 auto;
+    }
+
+    @include desktop{
+        height: 70rem;
+    }
+
+    .misDatos{
+        text-align: center;
+        .ubicacion{
+            color: $colorPrincipal-1;
+            font-size: 2rem;
+            font-weight: 700;
+            img{
+                width: 3rem;
+            }
+        }
+
+        .nombre{
+            font-size: 3rem;
+            font-weight: 700;
+            color: $colorPrincipal-4;
+            margin-bottom: 1rem;
+        }
+    
+        .carrera{
+            font-size: 3rem;
+            color: $colorPrincipal-4;
+            font-weight: bolder;
+        }
+        
+       
+    }
+}
+
+.slice{
+    background-color: $colorPrincipal-3;
+    position: absolute;
+    width: 100%;
+    min-height: 40rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}

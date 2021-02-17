@@ -437,6 +437,8 @@ body {
 }
 
 .btn {
+  cursor: pointer;
+  outline: none;
   width: 23rem;
   height: 6rem;
   font-size: 3rem;
@@ -444,11 +446,19 @@ body {
   border-radius: 1rem;
 }
 
+.btn:hover {
+  transform: scale(1.2);
+  transition: 300ms;
+}
+
 .btn-principal {
   color: #fef1f1;
   background-color: #f84756;
 }
 
+/*	#################################
+                         Boton superior izquierdo
+                #################################*/
 .menu {
   width: 7rem;
   height: 7rem;
@@ -458,23 +468,11 @@ body {
   top: 1rem;
   left: 1rem;
   z-index: 150;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
-}
-
-.menu .menu__barra {
-  width: 5rem;
-  height: 1rem;
-  background-color: white;
-  border-radius: 3rem;
-  margin-top: 0.3rem;
-}
-
-.menu .menu__barra:first-of-type {
-  margin-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
 }
 
 .menu:hover {
@@ -482,6 +480,44 @@ body {
   transform: scale(1.2);
 }
 
+.menu-barras {
+  flex-direction: column;
+}
+
+.menu-barras .menu__barra {
+  width: 5rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 3rem;
+  margin-top: 0.3rem;
+  transition: 300ms;
+}
+
+.menu-barras .menu__barra:first-of-type {
+  margin-top: none;
+}
+
+.menu-cruz {
+  position: relative;
+}
+
+.menu-cruz .menu__barra {
+  width: 5rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 3rem;
+  position: absolute;
+  transition: 300ms;
+  transform: rotate(30deg);
+}
+
+.menu-cruz .menu__barra:last-of-type {
+  transform: rotate(-30deg);
+}
+
+/*	#################################
+                         Opciones de menu
+                #################################*/
 .opciones {
   width: 100%;
   height: 100%;
@@ -526,4 +562,62 @@ body {
   max-width: 100%;
   overflow: visible;
   transition: 300ms;
+}
+
+.sobre-mi {
+  width: 90%;
+  min-height: 30rem;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .sobre-mi {
+    height: 40rem;
+    margin: 5 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sobre-mi {
+    height: 70rem;
+  }
+}
+
+.sobre-mi .misDatos {
+  text-align: center;
+}
+
+.sobre-mi .misDatos .ubicacion {
+  color: #252a3e;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sobre-mi .misDatos .ubicacion img {
+  width: 3rem;
+}
+
+.sobre-mi .misDatos .nombre {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #b1bef6;
+  margin-bottom: 1rem;
+}
+
+.sobre-mi .misDatos .carrera {
+  font-size: 3rem;
+  color: #b1bef6;
+  font-weight: bolder;
+}
+
+.slice {
+  background-color: #5867a1;
+  position: absolute;
+  width: 100%;
+  min-height: 40rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
