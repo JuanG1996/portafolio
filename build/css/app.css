@@ -680,3 +680,73 @@ body {
   margin: 3rem auto;
   cursor: pointer;
 }
+
+.vistaProyecto__contenedor {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.vista-proyecto {
+  margin: 0 auto;
+  width: 90%;
+  height: 95%;
+  border-radius: 2rem;
+  position: absolute;
+  background-color: #b1bef6;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vista-proyecto img {
+  width: 40rem;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .vista-proyecto img {
+    width: 60rem;
+  }
+}
+
+.vista-proyecto .titulo {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.vista-proyecto p {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.vista-proyecto .bold {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.vista-proyecto .cerrar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+}
+
+.activarVista {
+  display: flex;
+}
