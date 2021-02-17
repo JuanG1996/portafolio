@@ -366,6 +366,30 @@ body {
   background-color: #252a3e;
 }
 
+.btn {
+  cursor: pointer;
+  outline: none;
+  width: 23rem;
+  height: 6rem;
+  font-size: 5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  transition: 300ms;
+}
+
+.btn-principal {
+  background-color: #f84756;
+}
+
+.btn-principal a {
+  display: block;
+  color: #fef1f1;
+}
+
 /*	#################################
                          Layout
                 #################################*/
@@ -434,26 +458,6 @@ body {
   font-size: 5rem;
   color: #fef1f1;
   font-weight: bolder;
-}
-
-.btn {
-  cursor: pointer;
-  outline: none;
-  width: 23rem;
-  height: 6rem;
-  font-size: 3rem;
-  border: none;
-  border-radius: 1rem;
-}
-
-.btn:hover {
-  transform: scale(1.2);
-  transition: 300ms;
-}
-
-.btn-principal {
-  color: #fef1f1;
-  background-color: #f84756;
 }
 
 /*	#################################
@@ -567,23 +571,19 @@ body {
 .sobre-mi {
   width: 90%;
   min-height: 30rem;
-  margin: 5rem auto;
+  padding-top: 5rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 
 @media (min-width: 768px) {
-  .sobre-mi {
-    height: 40rem;
-    margin: 5 auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .sobre-mi {
-    height: 70rem;
+  .sobre-mi .avatar {
+    width: 20rem;
+    height: 20rem;
   }
 }
 
@@ -605,7 +605,6 @@ body {
   font-size: 3rem;
   font-weight: 700;
   color: #b1bef6;
-  margin-bottom: 1rem;
 }
 
 .sobre-mi .misDatos .carrera {
@@ -620,4 +619,30 @@ body {
   width: 100%;
   min-height: 40rem;
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  min-height: 40rem;
+  padding-top: 3rem;
+  align-items: center;
+}
+
+.contenido h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #f84756;
+  margin-bottom: 3rem;
+}
+
+.contenido .iconos {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 5rem;
+}
+
+.contenido .iconos img {
+  width: 6rem;
 }
