@@ -646,3 +646,33 @@ body {
 .contenido .iconos img {
   width: 6rem;
 }
+
+.wrap__proyectos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.wrap__proyectos .proyectos {
+  width: 100%;
+  height: 90%;
+}
+
+.wrap__proyectos .boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap__proyectos .proyectos {
+  padding-top: 8rem;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.wrap__proyectos .proyectos img {
+  width: 30rem;
+  display: block;
+  margin: 3rem auto;
+  cursor: pointer;
+}
