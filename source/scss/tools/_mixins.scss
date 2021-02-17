@@ -1,7 +1,6 @@
 @mixin grid($columnas, $gap) {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat($columnas, 1fr);
-    column-gap: $gap;
 }
 
 @mixin tablet {
