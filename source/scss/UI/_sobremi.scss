@@ -74,8 +74,14 @@
         width: 80%;
         grid-template-columns: repeat(5, 1fr);
         margin-bottom: 5rem;
+        @include tablet{
+            width: 70%;
+        }
         img{
             width: 6rem;
+            @include tablet{
+                width: 8rem;
+            }
         }
     }
 }
