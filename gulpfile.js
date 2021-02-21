@@ -31,7 +31,6 @@ function javascript(){
     return src(paths.js)
     .pipe(sourcemaps.init())
     .pipe(concat("bundle.js")) //Como se llamara el archivo final
-    .pipe(terser())
     .pipe(sourcemaps.write('.'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(dest("./build/js")) //Donde se guardara
@@ -39,6 +38,7 @@ function javascript(){
 
 function watchArchivo(){
     watch(paths.scss, compilarCSS)
+    watch(paths.js, javascript)
 }
 
 exports.css = compilarCSS;

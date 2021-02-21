@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "nombre": "Barberia",
+        "tipoProyecto": "Práctica",
+        "tecnologias": "HTML, CSS, JavaScript: Fetch API + GULP, SASS",
+        "responsive": "Sí",
+        "comentario": "Sitio para crear citas de una Barberia, creada para practicar tecnologías mencionadas",
+        "img": "./build/img/proyecto-barberia.PNG",
+        "web": "https://barberjuan.netlify.app/",
+        "github": "https://github.com/JuanG1996/AppSalon"
+    },  
+    
+    {
+        "id": 2,
+        "nombre": "Rock And EDM Festival",
+        "tipoProyecto": "Práctica",
+        "tecnologias": "HTML, CSS, Javascript + GULP, SASS",
+        "responsive": "Sí",
+        "comentario": "Sitio de practica simulando la venta de boletos para concierto",
+        "img": "./build/img/proyecto-FrontEndStore.PNG",
+        "web": "https://rockandedmfestival.netlify.app/"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Pasteleria Berenice",
+        "tipoProyecto": "Para cliente",
+        "tecnologias": "HTML, CSS, JAVASCRIPT: Fetch API + GULP, SASS",
+        "responsive": "No",
+        "comentario": "Vista del sitio antes de la entrega a cliente (con datos de prueba)",
+        "img": "./build/img/proyecto-pasteleriaberenice.PNG",
+        "web": "https://github.com/JuanG1996/PasteleriaBerenice"
+    },
+
+    {
+        "id": 4,
+        "nombre": "BlogDeCafe",
+        "tipoProyecto": "Práctica",
+        "tecnologias": "HTML, CSS: FlexBox, GRID",
+        "responsive": "Sí",
+        "comentario": "Sitio creado para practicar Flexbox y GRID",
+        "img": "./build/img/proyecto-RockAndEdmFestival.PNG",
+        "web": "https://blogdecafejuan.netlify.app/nosotros.html",
+        "github": "https://github.com/JuanG1996/BlogDeCafe"
+    }
+
+
+]

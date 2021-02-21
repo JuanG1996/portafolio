@@ -1,30 +1,3 @@
-document.addEventListener("DOMContentLoaded", ()=>{
-    contenedorProyectos = document.querySelector("#proyectos");
-    //Si estamos en la ventana de proyectos
-    if(contenedorProyectos){
-        // Carga los proyectos e insertalos en la web
-        extraerDatos();
-    }
-});
-const menu = document.querySelector(".menu");
-const opciones = document.querySelector(".opciones");
-
-menu.addEventListener("click", ()=>{
-    console.log("Hola soy el menu");
-    if(opciones.classList.contains("mostrarMenu")){
-        //Ocultar menu
-        opciones.classList.remove("mostrarMenu");
-        opciones.classList.add("ocultarMenu");
-        menu.classList.remove("menu-cruz");
-        menu.classList.add("menu-barras");
-    }else{
-        opciones.classList.remove("ocultarMenu");
-        opciones.classList.add("mostrarMenu");
-        menu.classList.remove("menu-barras");
-        menu.classList.add("menu-cruz");
-    }
-    
-})
 let arrayProyectos = [];
 
 async function extraerDatos(){
@@ -125,4 +98,3 @@ function cerrarVistaProyecto(){
     const vistaProyecto__contenedor = document.querySelector(".vistaProyecto__contenedor");
     vistaProyecto__contenedor.classList.remove("activarVista");
 }
-//# sourceMappingURL=bundle.js.map
