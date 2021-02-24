@@ -18,7 +18,7 @@
         "tecnologias": "HTML, CSS, Javascript + GULP, SASS",
         "responsive": "Sí",
         "comentario": "Sitio de practica simulando la venta de boletos para concierto",
-        "img": "./build/img/proyecto-FrontEndStore.PNG",
+        "img": "./build/img/proyecto-RockAndEDMFestival.PNG",
         "web": "https://rockandedmfestival.netlify.app/"
     },
 
@@ -26,11 +26,12 @@
         "id": 3,
         "nombre": "Pasteleria Berenice",
         "tipoProyecto": "Para cliente",
-        "tecnologias": "HTML, CSS, JAVASCRIPT: Fetch API + GULP, SASS",
+        "tecnologias": "HTML, CSS, JAVASCRIPT + GULP, SASS",
         "responsive": "No",
         "comentario": "Vista del sitio antes de la entrega a cliente (con datos de prueba)",
         "img": "./build/img/proyecto-pasteleriaberenice.PNG",
-        "web": "https://github.com/JuanG1996/PasteleriaBerenice"
+        "web": "https://mandaladesserts.netlify.app/",
+        "github": "https://github.com/JuanG1996/PasteleriaBerenice"
     },
 
     {
@@ -40,7 +41,7 @@
         "tecnologias": "HTML, CSS: FlexBox, GRID",
         "responsive": "Sí",
         "comentario": "Sitio creado para practicar Flexbox y GRID",
-        "img": "./build/img/proyecto-RockAndEdmFestival.PNG",
+        "img": "./build/img/proyecto-BlogDeCafe.PNG",
         "web": "https://blogdecafejuan.netlify.app/nosotros.html",
         "github": "https://github.com/JuanG1996/BlogDeCafe"
     }
