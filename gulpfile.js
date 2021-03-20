@@ -11,11 +11,16 @@ const rename = require("gulp-rename"); //Renombrar un archivo
 const terser = require("gulp-terser-js"); // Coloca todo el js en una linea igual que nano para css
 const sourcemaps = require("gulp-sourcemaps"); //crea un archivo mapa que coloca referencias al codigo indicando de donde viene el mismo
 
+const imagemin = require('gulp-imagemin');
+const notify = require('gulp-notify');
+const cache = require('gulp-cache');
+
 // paths
 paths = {
     css: "build/css",
     scss: "source/scss/**/*.scss",
-    js: "source/js/**/*.js"
+    js: "source/js/**/*.js",
+    imagenes: 'source/img/**/*'
 }
 
 function compilarCSS (){
@@ -25,6 +30,13 @@ function compilarCSS (){
         .pipe(postcss(  [autoprefixer(), cssnano()  ]) )
         .pipe(sourcemaps.write(".")) //Escribe nuestro propio archivo separado "map"
         .pipe(dest(paths.css))
+}
+
+function imagenes() {
+    return src(paths.imagenes)
+        .pipe(cache(imagemin({ optimizationLevel: 3})))
+        .pipe(dest('./build/img'))
+        .pipe(notify({ message: 'Imagen Completada'}));
 }
 
 function javascript(){
@@ -42,4 +54,5 @@ function watchArchivo(){
 }
 
 exports.css = compilarCSS;
+exports.imagenes = imagenes;
 exports.default = parallel(compilarCSS, javascript, watchArchivo);

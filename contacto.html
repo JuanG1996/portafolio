@@ -37,15 +37,15 @@
 
 <main class="contacto-wrap">
                 <h2>Contactame llenando el formulario</h2>
-                <form action="enviar.php" class="contacto">
+                <form action="enviar.php" method="POST" class="contacto">
                     <label for="nombre" class="contacto__label">Nombre:</label>
-                    <input type="text" class="contacto__campo" id="nombre" placeholder="Coloca tu nombre" required>
+                    <input type="text" class="contacto__campo" id="nombre" name="nombre" placeholder="Coloca tu nombre" required>
                     <label for="email" class="contacto__label">Correo:</label>
-                    <input type="text" class="contacto__campo" id="email" placeholder="tucorreo@dominio.com">
+                    <input type="text" class="contacto__campo" id="email" name="email" placeholder="tucorreo@dominio.com">
                     <label for="mensaje" class="contacto__label">Mensaje:</label>
                     <textarea name="mensaje" class="contacto__campo" id="mensaje" cols="30" rows="8" placeholder="Coloca aquí tu mensaje">
                     </textarea>
-                    <input type="submit" value="Enviar" class="btn btn-principal contacto__submit">
+                    <input type="submit" id="submit" name="submit" value="Enviar" class="btn btn-principal contacto__submit">
                     
                 </form>
 </main>
