@@ -49,8 +49,8 @@ function abrirVistaProyecto(e){
             infoProyecto = document.createElement("div");
             tipoInfo = crearParrafoVista("Tipo de proyecto", tipoProyecto);
             responsiveInfo = crearParrafoVista("¿Responsive?", responsive);
-            tecnologiasInfo = crearParrafoVista("Tecnologiás usadas:", tecnologias);
-            descripcionInfo = crearParrafoVista("Descripción:", comentario);
+            tecnologiasInfo = crearParrafoVista("Tecnologiás usadas", tecnologias);
+            descripcionInfo = crearParrafoVista("Descripción", comentario);
             infoProyecto.appendChild(tipoInfo);
             infoProyecto.appendChild(responsiveInfo);
             infoProyecto.appendChild(tecnologiasInfo);
