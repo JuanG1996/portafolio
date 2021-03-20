@@ -50,8 +50,12 @@
     background-color: $colorPrincipal-3;
     position: absolute;
     width: 100%;
+    min-width: 370px;
     min-height: 40rem;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    @include responsive(320px){
+        min-height: 40rem;
+    }
 }
 
 
@@ -71,23 +75,29 @@
 
     .iconos{
         display: grid;
-        width: 80%;
+        width: 100%;
         grid-template-columns: repeat(5, 1fr);
         margin-bottom: 5rem;
         @include tablet{
             width: 70%;
         }
         img{
-            width: 6rem;
+            width: 5rem;
             @include tablet{
                 width: 8rem;
             }
+
+            @include desktop{
+             width: 9rem;
+            }
         }
+
 
         .iconos-tecnologia{
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 0.3rem;
             p{
                 font-size: 2rem;
                 color: rgb(233, 223, 223);

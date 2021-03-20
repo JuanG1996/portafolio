@@ -19,6 +19,7 @@ a{
 body{
     font-family: $fuentePrincipal;
     background-color: $colorPrincipal-1;
+    min-width: 360px;
 }
 
 
@@ -27,9 +28,13 @@ body{
     outline: none;
     width: 23rem;
     height: 6rem;
-    font-size: 5rem;
+    font-size: 4rem;
     border: none;
     border-radius: 1rem;
+
+    @include tablet{
+        font-size: 5rem;
+    }
 
     &:hover{
         transform: scale(1.2);
@@ -38,7 +43,7 @@ body{
 }
 
 
-.btn-principal{
+.btn-principal, .btn-secundario{
     background-color: $colorPrincipal-2;
     
     a{
@@ -46,5 +51,13 @@ body{
         color: $colorSecundario-1;
         text-align: center;
         line-height: 5rem;
+    }
+}
+
+.btn-secundario{
+    width: 15rem;
+    @include responsive(760px){
+        width: 23rem;
+        font-size: 4rem;
     }
 }
